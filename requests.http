@@ -1,0 +1,121 @@
+###
+POST http://localhost:3000/api/persons HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Carlos perez",
+  "tipo_documento": "CC",
+  "documento":"45265247",
+  "rol":"usuario",
+  "grupo":"Obrero",
+  "genero":"Masculino",
+  "direccion": "Cl 3 #72-26",
+  "telefono":"3105556231",
+  "email":"santopedro@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/persons HTTP/1.1
+
+###
+GET http://localhost:3000/api/persons/61902de7d1ac0e473c9c22a0 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/persons/61902de7d1ac0e473c9c22a0 HTTP/1.1
+Content-Type: application/json
+ 
+{
+  "nombre": "Maria",
+  "tipo_documento": "CC",
+  "documento":"5269772",
+  "rol":"usuario",
+  "grupo":"Escuelita",
+  "genero":"Femenino",
+  "direccion": "Cl 25 # 15-45",
+  "telefono":"3108648551",
+  "email":"maria@gmail.com"
+}
+
+###
+DELETE http://localhost:3000/api/persons/618f079cac0cfccbce2952e6 HTTP/1.1
+
+###
+POST http://localhost:3000/api/shepherds HTTP/1.1
+Content-Type: application/json
+
+{
+  "totalLideres": 50
+}
+
+###
+GET http://localhost:3000/api/shepherds HTTP/1.1
+
+###
+GET http://localhost:3000/api/shepherds/61902ecd0eb3b9e1113497f3 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/shepherds/61902ecd0eb3b9e1113497f3 HTTP/1.1
+Content-Type: application/json
+ 
+{
+  "totalLideres": 60
+}
+
+###
+DELETE http://localhost:3000/api/shepherds/61902ecd0eb3b9e1113497f3 HTTP/1.1
+
+###
+POST http://localhost:3000/api/leaders HTTP/1.1
+Content-Type: application/json
+
+{
+  "grupo":"Escuelita",
+  "totalGrupos": 11,
+  "totalSubLider": 4
+}
+
+###
+GET http://localhost:3000/api/leaders HTTP/1.1
+
+###
+GET http://localhost:3000/api/leaders/619030280eb3b9e1113497f7 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/leaders/61902ecd0eb3b9e1113497f3 HTTP/1.1
+Content-Type: application/json
+ 
+{
+  "grupo":"Obrero",
+  "totalGrupos": 14,
+  "totalSubLider": 5
+}
+
+###
+DELETE http://localhost:3000/api/leaders/61902ecd0eb3b9e1113497f3 HTTP/1.1
+
+###
+POST http://localhost:3000/api/subleaders HTTP/1.1
+Content-Type: application/json
+
+{
+  "grupo":"Escuelita",
+  "totalGrupos": 11
+}
+
+###
+GET http://localhost:3000/api/subleaders HTTP/1.1
+
+###
+GET http://localhost:3000/api/subleaders/61903493a2a7de7fff6e9e7d HTTP/1.1
+
+###
+PUT http://localhost:3000/api/subleaders/61903493a2a7de7fff6e9e7d HTTP/1.1
+Content-Type: application/json
+ 
+{
+  "grupo":"Referencia",
+  "totalGrupos": 14
+}
+
+###
+DELETE http://localhost:3000/api/subleaders/61903493a2a7de7fff6e9e7d HTTP/1.1
